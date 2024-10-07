@@ -7,16 +7,16 @@ const VideoTitle = ({ info }) => {
 
   return (
     <>
-      <div className="pt-44 pl-16 absolute w-screen aspect-video text-white bg-gradient-to-r from-black ">
-        <h1 className="text-6xl font-bold ">
-          <i> {original_title}</i> <sub className="text-3xl">({vote_average})</sub> 
+      <div className="pt-52  sm:pl-16 pl-5 absolute w-screen h-screen text-white bg-black bg-opacity-50 ">
+        <h1 className="sm:text-6xl  text-3xl font-bold ">
+          <i> {original_title}</i> <sub className="sm:text-3xl text-lg">({vote_average.toFixed(1)})</sub> 
         </h1>
-        <p className="text-lg w-1/4 py-5">{overview} </p>
+        <p className="sm:text-lg text-base 2xl:w-1/4 lg:w-[40%] md:w-[50%] sm:w-[60%] w-[80%] py-5">{overview} </p>
         <div className="flex">
-          <button className="items-center gap-2 hover:opacity-80 flex p-2 px-8 font-bold text-lg rounded-lg m-2 bg-white text-black">
+          <button className="items-center gap-2 hover:opacity-80 flex p-2 sm:px-8 px-3 font-bold text-base sm:text-lg rounded-lg m-2 bg-white text-black">
           <FaPlay /> Play
           </button>
-          <button className="p-2 flex items-center gap-2 px-5 font-bold text-lg rounded-lg m-2 bg-gray-500 text-white">
+          <button className="p-2 flex items-center gap-2 sm:px-5 px-2 font-bold sm:text-lg text-base rounded-lg m-2 bg-gray-500 text-white">
            <IoInformationCircleOutline/> More Info
           </button>
         </div>
